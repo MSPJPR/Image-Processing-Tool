@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advanced Image Processing Tool</h1>
+    <div id="image-section">
+        <input type="file" id="image-input" accept="image/*">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="controls">
+        <label>Brightness: <input type="range" id="brightness" min="0" max="200" value="100"></label>
+        <label>Contrast: <input type="range" id="contrast" min="0" max="200" value="100"></label>
+        <button id="apply-enhancements">Apply Enhancements</button>
+        <div id="filters">
+            <button id="grayscale">Grayscale</button>
+            <button id="sepia">Sepia</button>
+            <button id="invert">Invert</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
